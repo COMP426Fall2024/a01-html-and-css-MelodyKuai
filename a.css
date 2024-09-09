@@ -1,0 +1,39 @@
+html{
+    background-image: url(./background2.jpg);
+    background-attachment:fixed;
+    background-position: center;
+    background-size:cover;   
+}
+p{
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.story{
+    margin: 0 auto;
+    width: 750px;
+    height: 500px;
+    margin-top: 50px;
+    text-indent: 5%;
+}
+
+.bt{
+    margin: auto;
+    width: 1000px;
+    height: 20px;
+    display: flex;
+    column-gap: 700px;    
+}
+
+a{
+    text-decoration: none;
+}
+.allthebutton{
+    margin-top: 200px;
+}
+.bt1{
+    float: inline-start;
+}
+.bt2{
+    float:inline-end;
+}
