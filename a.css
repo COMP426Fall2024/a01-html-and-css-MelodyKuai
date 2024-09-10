@@ -1,93 +1,187 @@
-.aPage {
-    html {
-        background-image: url(./background2.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;   
-    }
-    p {
-        margin: 0 auto;
-        font-size: 20px;
-    }
-    
-    .story {
-        margin: 0 auto;
-        width: 750px;
-        height: 500px;
-        margin-top: 50px;
-        text-indent: 5%;
-    }
-    
-    button {
-        width: 70px;
-        height: 40px;
-        border-radius: 10px;
-        border-color: rgb(159, 159, 200);
-    } 
-    
-    a {
-        text-decoration: none;
-    }
-    .allbutton {
-        margin-top: 20px;
-    }
-    .bt1 {
-        float: inline-start;
-    }
-    .bt2 {
-        float: inline-end;
-    }
-}
-
-.video-container {
+.mainPage {
+    background-image: url(./background1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .mainPage h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .mainPage h2 {
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+    font-style: italic;
+    padding-top: 40px;
+    font-family:'Lucida Sans';
+  }
+  
+  .mainPage a {
+    text-decoration: none;
+    color: rgb(229, 219, 110);
+  }
+  
+  .mainPage a:hover {
+    color: rgb(160, 60, 20);
+    background-color: red;
+  }
+  
+  .mainPage .container {
+    height: 500px;
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 100px;
+  }
+  
+  .mainPage .story {
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+  
+  .mainPage .video {
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+  }
+  
+  .mainPage .festival {
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(159, 159, 200);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .aPage {
+    background-image: url(./background2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .aPage p {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+  .aPage #story {
+    margin: 0 auto;
+    width: 750px;
+    height: 500px;
+    margin-top: 50px;
+    text-indent: 5%;
+  }
+  
+  .aPage .allbutton {
+    margin-top: 20px;
+  }
+  
+  .aPage .bt1 {
+    float: left;
+  }
+  
+  .aPage .bt2 {
+    float: right;
+  }
+  
+  .video-container {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-}
-
-video {
+  }
+  
+  .video-container video {
     width: 100%;
     max-width: 1000px;
     height: auto;
-}
-
-.button-container {
+  }
+  
+  .button-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-}
-
-.video-button {
+  }
+  
+  .video-button {
     width: 100px;
-}
+  }
+  
+  .cPage {
+    background-image: url(./bg3festival.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    color: aliceblue;
+  }
+  
+  .cPage h1 {
+    text-align: center;
+  }
+  
+  .cPage .Mid-Autumn {
+    font-size: 22px;
+  }
+  
+  .cPage p {
+    text-indent: 5%;
+  }
+  
+  .cPage span {
+    line-height: 40px;
+  }
+  
+  .cPage .bt1 {
+    float: left;
+  }
+  
+  .cPage .bt2 {
+    float: right;
+  }
+  
+  .cPage button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+  }
 
-.cPage {
-    h1 {
-        text-align: center;
-    }
-    .Mid-Autumn {
-        font-size: 22px;
-        color: aliceblue;
-    }
-    p {
-        text-indent: 5%;
-        color: aliceblue
-    }
-    span {
-        line-height: 40px;
-    }
-    .bt1 {
-        float: inline-start;
-    }
-    .bt2 {
-        float: inline-end;
-    }
-    button {
-        width: 100px;
-        height: 30px;
-        border-radius: 10px;
-    }
-    a {
-        text-decoration: none;
-    }
-}
+  .cPage table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .cPage th, .cPage td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
