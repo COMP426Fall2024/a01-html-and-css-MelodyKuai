@@ -27,7 +27,7 @@
   
   .mainPage a:hover {
     color: rgb(160, 60, 20);
-    background-color: red;
+    background-color: #fa0909;
   }
   
   .mainPage .container {
