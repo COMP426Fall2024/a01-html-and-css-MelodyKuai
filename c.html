@@ -7,46 +7,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_logosc/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_logosc/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./a.css">
     <style>
-        html{
-            background-image:url(./bg3festival.jpg);
+        html {
+            background-image: url(./bg3festival.jpg);
             background-repeat: no-repeat;
-            background-attachment:fixed;
+            background-attachment: fixed;
             background-position: center;
-            background-size:cover;
+            background-size: cover;
         }
-        h1{
-            text-align: center;
-        }
-        .Mid-Autumn{
-            /* background-color: aquamarine; */
-            font-size: 22px;
-            color: aliceblue;
-        }
-        p{
-            text-indent: 5%;
-        }
-        span{
-            line-height: 40px;
-        }
-        .bt1{
-            float: inline-start;
-        }
-        .bt2{
-            float: inline-end;
-        }
-        button{
-            width: 100px;
-            height: 30px;
-            border-radius: 10px;
-        }
-        a{
-            text-decoration: none;
+        .country-info {
+            display: none;
         }
     </style>
 </head>
-<body>
-    <div class="Mid-Autumn">
+<body class="cPage">
+    <div id="Mid-Autumn" class="Mid-Autumn">
+        <img src="./mooncake.jpg" alt="chinese mooncake">
         <h1>Mid-Autumn Festival</h1>
         <span>
         <p>
@@ -62,12 +39,75 @@
         </p>
         </span>
     </div>
+
+    <div id="choices">
+        <label for="country-select">Which country's Mid-Autumn Festival are you most interested in?</label><br>
+        <select name="survey" id="country-select">
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Thailand">Thailand</option>
+        </select>
+    </div>
+
+    <div id="country-info">
+        <div id="Korea" class="country-info">
+            <h2>Korea</h2>
+            <ul>
+                <li>Play traditional seesaw games</li>
+                <li>Sample korean muffin</li>
+                <li>Eat taro soup</li>
+            </ul>
+        </div>
+        <div id="Japan" class="country-info">
+            <h2>Japan</h2>
+            <p>Eat rice dumplings</p>
+        </div>
+        <div id="Vietnam" class="country-info">
+            <h2>Vietnam</h2>
+            <ul>
+                <li>Children take carp lanterns</li>
+                <li>Lantern festivals</li>
+                <li>Lion dances</li>
+            </ul>
+        </div>
+        <div id="Thailand" class="country-info">
+            <h2>Thailand</h2>
+            <ul>
+                <li>Use moon cakes, peaches, nuts, lotus roots, taro to worship the moon god</li>
+                <li>Burn incense and pray for blessings</li>
+                <li>Water Lantern Festival</li>
+            </ul>
+        </div>
+    </div>
+
     <div class="bt1">
         <button><a href="b.html">back</a></button>
     </div>
     <div class="bt2">
         <button><a href="index.html">homepage</a></button>
     </div>
-    </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const select = document.getElementById('country-select');
+            const countryInfos = document.querySelectorAll('.country-info');
+
+            function showSelectedCountry() {
+                const selectedCountry = select.value;
+                countryInfos.forEach(info => {
+                    if (info.id === selectedCountry) {
+                        info.style.display = 'block';
+                    } else {
+                        info.style.display = 'none';
+                    }
+                });
+            }
+
+            select.addEventListener('change', showSelectedCountry);
+
+            showSelectedCountry();
+        });
+    </script>
 </body>
 </html>

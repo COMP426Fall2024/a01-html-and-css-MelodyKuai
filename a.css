@@ -1,39 +1,93 @@
-html{
-    background-image: url(./background2.jpg);
-    background-attachment:fixed;
-    background-position: center;
-    background-size:cover;   
-}
-p{
-    margin: 0 auto;
-    font-size: 20px;
+.aPage {
+    html {
+        background-image: url(./background2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;   
+    }
+    p {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    
+    .story {
+        margin: 0 auto;
+        width: 750px;
+        height: 500px;
+        margin-top: 50px;
+        text-indent: 5%;
+    }
+    
+    button {
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+        border-color: rgb(159, 159, 200);
+    } 
+    
+    a {
+        text-decoration: none;
+    }
+    .allbutton {
+        margin-top: 20px;
+    }
+    .bt1 {
+        float: inline-start;
+    }
+    .bt2 {
+        float: inline-end;
+    }
 }
 
-.story{
-    margin: 0 auto;
-    width: 750px;
-    height: 500px;
-    margin-top: 50px;
-    text-indent: 5%;
-}
-
-.bt{
-    margin: auto;
-    width: 1000px;
-    height: 20px;
+.video-container {
     display: flex;
-    column-gap: 700px;    
+    justify-content: center;
+    margin-top: 30px;
 }
 
-a{
-    text-decoration: none;
+video {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
 }
-.allthebutton{
-    margin-top: 200px;
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-.bt1{
-    float: inline-start;
+
+.video-button {
+    width: 100px;
 }
-.bt2{
-    float:inline-end;
+
+.cPage {
+    h1 {
+        text-align: center;
+    }
+    .Mid-Autumn {
+        font-size: 22px;
+        color: aliceblue;
+    }
+    p {
+        text-indent: 5%;
+        color: aliceblue
+    }
+    span {
+        line-height: 40px;
+    }
+    .bt1 {
+        float: inline-start;
+    }
+    .bt2 {
+        float: inline-end;
+    }
+    button {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    a {
+        text-decoration: none;
+    }
 }
